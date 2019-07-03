@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BillItemManagedObject" representedClassName="BillItemManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="expense" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseManagedObject" inverseName="items" inverseEntity="ExpenseManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="ContributionManagedObject" representedClassName="ContributionManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="member" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MemberManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="ExchangeRateManagedObject" representedClassName="ExchangeRateManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="orderedCurrencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownedCurrencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="member" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MemberManagedObject" inverseName="exchangeRates" inverseEntity="MemberManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="ExpenseManagedObject" representedClassName="ExpenseManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="currencyCode" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expenseDescription" attributeType="String" syncable="YES"/>
+        <attribute name="tip" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="borrowers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MemberManagedObject" syncable="YES"/>
+        <relationship name="contributions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContributionManagedObject" syncable="YES"/>
+        <relationship name="group" maxCount="1" deletionRule="Nullify" destinationEntity="GroupManagedObject" inverseName="expenses" inverseEntity="GroupManagedObject" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BillItemManagedObject" inverseName="expense" inverseEntity="BillItemManagedObject" syncable="YES"/>
+        <relationship name="payer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MemberManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="GroupManagedObject" representedClassName="GroupManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="expenses" toMany="YES" deletionRule="Nullify" destinationEntity="ExpenseManagedObject" inverseName="group" inverseEntity="ExpenseManagedObject" syncable="YES"/>
+        <relationship name="members" toMany="YES" deletionRule="Nullify" destinationEntity="MemberManagedObject" inverseName="group" inverseEntity="MemberManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="MemberManagedObject" representedClassName="MemberManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="surname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalBalance" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="exchangeRates" toMany="YES" deletionRule="Nullify" destinationEntity="ExchangeRateManagedObject" inverseName="member" inverseEntity="ExchangeRateManagedObject" syncable="YES"/>
+        <relationship name="group" maxCount="1" deletionRule="Nullify" destinationEntity="GroupManagedObject" inverseName="members" inverseEntity="GroupManagedObject" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ContributionManagedObject" positionX="-452.28515625" positionY="198.01953125" width="128" height="75"/>
+        <element name="ExchangeRateManagedObject" positionX="-75.33203125" positionY="-198.14453125" width="128" height="105"/>
+        <element name="ExpenseManagedObject" positionX="-498.171875" positionY="-41.125" width="128" height="195"/>
+        <element name="GroupManagedObject" positionX="-686.0078125" positionY="-255.625" width="128" height="120"/>
+        <element name="MemberManagedObject" positionX="-294.16015625" positionY="-227.7734375" width="128" height="150"/>
+        <element name="BillItemManagedObject" positionX="-710.796875" positionY="50.93359375" width="128" height="90"/>
+    </elements>
+</model>

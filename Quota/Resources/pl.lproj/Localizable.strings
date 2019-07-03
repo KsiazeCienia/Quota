@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  Quota
+
+  Created by Marcin Włoczko on 12/11/2018.
+  Copyright © 2018 Marcin Włoczko. All rights reserved.
+*/
+
+"you_are_owed" = "Jesteś dłużny ";
+"to" = "";
+"owes_you" = " jest Ci dłużny ";
+"contributors" = "Uczestnicy";
+"payer_summary" = "Płatnik: ";
+"amount_summary" = "Kwota: ";
+"language" = "pol";
+"group_name_placeholder" = "Nazwa grupy";
+"currency_placeholder" = "Waluta";
+"add_user" = "Dodaj członka";
+"name" = "Imię";
+"tip_summary" = "napiwek";
+"email" = "E-mail (opcjonalnie)";
+"surname" = "Nazwisko";
+"expenses" = "Wydatki";
+"members" = "Członkowie";
+"description" = "Opis";
+"amount" = "Kwota";
+"tip" = "Napiwek (opcjonalnie)";
+"payer" = "Płaci";
+"borrowers" = "Pożycza";
+"proportional" = "Proporcjonalnie";
+"by_amount" = "Kwota";
+"split_method" = "Metoda podziału";
+"amount_not_zero" = "Rozdzielona wartość nie jest właściwa";
+"currency_table_button_title" = "Zarządzaj tabelą walut";
+"date" = "Data";
+"add_image" = "Dodaj zdjęcie rachunku";
+"crop_image" = "Gotowe";
+"rate" = "Kurs";
+"bill_info" = "Pamiętaj aby zdjęcie było dobrze oświetlone żeby uzyskać jak najlepsze efekty";
+"selected_bill_info" = "Zaznacz obszar paragonu zawierający pozycje";
+"bill_gallery" = "Wybierz z galerii";
+"bill_camera" = "Zrób zdjęcie";
+"go_to_grups" = "Grupy";
+"bill_detail" = "Szczegóły rachunku";
+"owns_text" = " owns you ";
+"owned_text" = " is owned ";
+"done" = "Gotowe";
+"save" = "Zapisz";
+"groups_title" = "Grupy";
+"new" = "Nowa";
+"file_name" = "Podsumowanie";
+"summary_subject_title" = "Quota podsumowanie";
+"error_message" = "Z powodu braku internetu aplikacja nie może pobrać kursu wpisanej waluty. Podaj kurs w jakim kwota ma zostać przeliczona dla osób, które nie posiadają pasującego kursu.";
+"bills_sum" = "Suma pozycji rachunku = ";
+"share" = "udział(y)";
+"empty_fields_message" = "Uzupełnij wymagane pola";
+"members_not_selected" = "Wybierz płatnika i pożyczających";
+"not_enough_members" = "Do utworzenia grupy wymaganych jest co najmniej dwóch członków";
+"total_balance" = "Całkowity bilans: ";
+"left" = "Pozostało: ";
+"edit" = "Edycja";

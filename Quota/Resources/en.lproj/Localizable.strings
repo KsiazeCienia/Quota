@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  Quota
+
+  Created by Marcin Włoczko on 12/11/2018.
+  Copyright © 2018 Marcin Włoczko. All rights reserved.
+*/
+
+"you_are_owed" = "You are owed ";
+"to" = "to";
+"owes_you" = " is owed you ";
+"contributors" = "Contributors";
+"payer_summary" = "Payer: ";
+"amount_summary" = "Amount: ";
+"language" = "eng";
+"group_name_placeholder" = "Group name";
+"tip_summary" = "tip";
+"currency_placeholder" = "Currency";
+"add_user" = "Add member";
+"name" = "Name";
+"email" = "E-mail(Optional)";
+"surname" = "Surname";
+"expenses" = "Expenses";
+"amount_not_zero" = "Split value is wrong.";
+"members" = "Members";
+"description" = "Description";
+"amount" = "Amount";
+"tip" = "Tip (Optional)";
+"payer" = "Payer";
+"borrowers" = "Borrowers";
+"proportional" = "Proportional";
+"by_amount" = "By amount";
+"split_method" = "Division method";
+"currency_table_button_title" = "Manage currency tabel";
+"date" = "Date";
+"add_image" = "Add bill image";
+"crop_image" = "Ready";
+"rate" = "Rate";
+"bill_info" = "To get the best result photo should be well illuminated";
+"selected_bill_info" = "Select part of photo containing bill items";
+"bill_gallery" = "Select from gallery";
+"bill_camera" = "Take a photo";
+"go_to_grups" = "Grups";
+"bill_detail" = "Bill details";
+"owns_text" = " owns you ";
+"owned_text" = " is owned ";
+"done" = "Done";
+"save" = "Save";
+"groups_title" = "Groups";
+"new" = "New";
+"file_name" = "Summary";
+"edit" = "Edit";
+"summary_subject_title" = "Quota summary";
+"error_message" = "There is no internet connection to obatin exchange rate. Enter the value to calculate contribution for members with missing rates.";
+"bills_sum" = "Total bill value = ";
+"share" = "share(s)";
+"empty_fields_message" = "Complete required fields";
+"members_not_selected" = "You have to choose payer and borrowers";
+"not_enough_members" = "There have to be at least two members to create the group";
+"total_balance" = "Total balance: ";
+"left" = "Left: ";
